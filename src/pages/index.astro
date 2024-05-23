@@ -4,14 +4,22 @@ import Card from "@/sections/card.astro";
 ---
 
 <Layout title="Portfolio of Dante Vilchez">
-  <main>
+  <main style="background-color: #FFF">
     <Card />
   </main>
 </Layout>
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
+<style is:global>
+
+  .center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
   }
+
+  body {
+    background: linear-gradient(to left, #1730AC 0%, #008ECB 100%);;
+  }
+
 </style>

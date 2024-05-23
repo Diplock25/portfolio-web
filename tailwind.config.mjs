@@ -4,7 +4,11 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"blue-gradient": "#048dfc"
+				"blue-gradient": "#09f"
+			},
+			backgroundImage: {
+				"blue-gradient": "linear-gradient(to right, #1730AC 0%, #008ECB 100%);",
+				"blue-gradient-reverse": "linear-gradient(to left, #1730AC 0%, #008ECB 100%);"
 			},
 			aspectRatio: {
 				card: '1.618 / 1',

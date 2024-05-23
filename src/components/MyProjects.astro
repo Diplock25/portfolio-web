@@ -1,0 +1,16 @@
+---
+interface Props {
+	text: string;
+}
+const { text } = Astro.props;
+---
+
+<section class="text-white border border-slate-200 border-t-[100px] h-screen w-screen translate-y-[100vh]">
+	{text}
+</section>
+<style>
+	section {
+		background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+		border-top: 3px solid white;
+	}
+</style>
