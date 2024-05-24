@@ -3,9 +3,6 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-			colors: {
-				"blue-gradient": "#09f"
-			},
 			backgroundImage: {
 				"blue-gradient": "linear-gradient(to right, #1730AC 0%, #008ECB 100%);",
 				"blue-gradient-reverse": "linear-gradient(to left, #1730AC 0%, #008ECB 100%);"
