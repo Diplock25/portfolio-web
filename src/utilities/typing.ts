@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-  const typedText = document.querySelector(".typed-text");
+  const typedText = document.querySelector(".typed-text") as HTMLElement;
   const textToType = "Dante Vilchez";
   let currentIndex = 0;
 
