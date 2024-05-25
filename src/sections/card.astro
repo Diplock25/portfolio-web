@@ -9,10 +9,11 @@ import PointIcon from "@/components/svgs/PointIcon.astro";
 const info = {
   fullname: "Dante Vilchez",
   role: "FullStack Developer",
-  email: "softwareprogramando@gmail.com",
+  email: "dantevilchez860@gmail.com",
   phone: "+51 948137905",
   addrees: "Lima, Perú",
 };
+
 ---
 
 <section class="bg-none fixed -z-10 grid place-items-center h-screen w-screen p-5">
@@ -25,7 +26,7 @@ const info = {
     -->
     <div
       class="hidden absolute bottom-0 right-0 w-[20%] h-[2.5%] rounded-md bg-blue-gradient
-      sm:block sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-[50%] sm:h-[53%] md:h-1/2 sm:w-[6%]"
+      sm:block sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-[50%] sm:h-[56%] md:h-1/2 sm:w-[6%]"
     >
     </div>
     <header class="area-data-1 relative">
@@ -36,15 +37,13 @@ const info = {
           >
             <UserIcon class="text-white w-6 md:w-7 lg:w-9" />
           </span>
-          
           <h1
-            class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-bold tracking-tighter text-gray-900 dark:text-white text-3xl md:text-4xl"
+            class="max-[640px]:left-1/2 max-[640px]:-translate-x-1/2 max-[640px]:absolute typed-text w-max mx-auto font-bold tracking-tighter text-3xl lg:text-4xl min-[1150px]:text-[40px] sm:pl-[6%]"
           >
-            {info.fullname}
           </h1>
         </div>
         <h2
-          class="text-xl text-center px-6 text-slate-600 dark:text-gray-300 sm:text-xl md:text-2xl"
+          class="text-xl text-center text-slate-600 dark:text-gray-300 sm:text-xl lg:text-2xl"
         >
           FullStack Developer
         </h2>
@@ -60,7 +59,7 @@ const info = {
           <EmailIcon class="text-white w-6 lg:w-9" />
         </span>
         <div
-          class="w-1/2 overflow-hidden absolute top-1/2 left-20 -translate-y-1/2"
+          class="w-1/2 overflow-hidden max-[640px]:absolute top-1/2 left-20 max-[640px]:-translate-y-1/2 sm:w-full sm:text-center"
         >
           <p class="text-lg">{info.email}</p>
         </div>
@@ -71,7 +70,7 @@ const info = {
         >
           <PhoneCall class="text-white w-6 lg:w-9" />
         </span>
-        <div class="w-max absolute top-1/2 left-20 -translate-y-1/2">
+        <div class="w-1/2 overflow-hidden max-[640px]:absolute top-1/2 left-20 max-[640px]:-translate-y-1/2 sm:w-full sm:text-center">
           <p class="text-lg">{info.phone}</p>
         </div>
       </div>
@@ -81,35 +80,35 @@ const info = {
         >
           <MapPinIcon class="text-white w-6 lg:w-9" />
         </span>
-        <div class="w-max absolute top-1/2 left-20 -translate-y-1/2">
+        <div class="w-1/2 overflow-hidden max-[640px]:absolute top-1/2 left-20 max-[640px]:-translate-y-1/2 sm:w-full sm:text-center">
           <p class="text-lg">{info.addrees}</p>
         </div>
       </div>
-      <div class="w-full"> 
-        <span class="w-max mx-auto flex items-center gap-1 bg-blue-100 text-blue-gradient text-sm font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border-2 border-blue-gradient">
+      <div class="w-full sm:pr-[6%]"> 
+        <span class="sparkle w-max mx-auto flex items-center gap-1 bg-blue-100 text-blue-gradient text-sm font-medium px-2.5 py-0.5 rounded dark:bg-gray-700/50 dark:text-blue-400 border-2 border-blue-gradient lg:text-base ">
           <PointIcon class="h-4"/>
-          Available by hire
-        
+          Disponible
         </span>
       </div>
     </aside>
     <figure class="area-image py-3 flex items-center">
       <div
-        class="h-full rounded-lg overflow-hidden aspect-square sm:h-auto sm:size-60 md:size-72 lg:size-96 mx-auto"
+        class="h-full rounded-3xl -translate-y-[4%] overflow-hidden aspect-square sm:h-auto sm:size-60 md:size-72 lg:size-96 mx-auto"
       >
         <img
           class="h-full"
-          src="https://img.asmedia.epimg.net/resizer/v2/TEYKMK7I4FFAXL44K6UOHM6ZYI.jpg?auth=002623d04e253e84a3004dd27671ca25c2e0875722c8d7e27312946b44ecd79a"
+          src="../../public/foto.png"
           alt="photo Dante's"
         />
       </div>
     </figure>
   </div>
 </section>
+<script src="@/utilities/typing.js"></script>
 
 <style is:inline>
   section > div {
-    background: linear-gradient(to right, #071332, #15293d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #071332, #15293d);
   }
 
   .clip-path {
@@ -139,26 +138,9 @@ const info = {
 
   h1 {
     font-family: "Azeret Mono Variable", monospace;
-    position: relative;
-    width: max-content;
-    background: #0479FF;
     background: linear-gradient(to left, #0479FF 0%, #00CCFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
-  }
-
-  h1::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-    animation: typing 0.6s steps(12) forwards;
-    animation-delay: 0.3s;
   }
 
   @media (width >= 640px) {
@@ -179,16 +161,22 @@ const info = {
     }
   }
 
-  @keyframes typing {
-    0 {
-      width: 100%;
-    }
-    100% {
-      width: 0;
-    }
+  .sparkle {
+    animation: sparkle-animation 1s infinite;
   }
 
-  a {
-    transform: scale3d(0.9);
+  @keyframes sparkle-animation {
+  0% {
+    box-shadow: 0 0 0 transparent;
+    transform: scale(1);
   }
+  50% {
+    box-shadow: 0 0 20px rgba(18, 238, 253, 0.3);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+    transform: scale(1);
+  }
+}
 </style>
